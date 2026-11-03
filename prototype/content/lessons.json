@@ -1,0 +1,50 @@
+{
+  "schema": "jeli.lesson-cards.v1",
+  "authority": "Canonical NKo repository data; human review remains final",
+  "lessons": [
+    {
+      "card_id": "greeting-morning",
+      "kind": "greeting",
+      "title": "Morning greeting",
+      "nko": "ߌ ߣߌ ߛߐ߲߬ߜߐߡߊ",
+      "latin": "I ni sogoma",
+      "english": "Good morning",
+      "prompt": "Listen, then hold the amber button and repeat.",
+      "expected_response": "ߒ ߓߊ ߌ ߣߌ ߛߐ߲߬ߜߐߡߊ",
+      "source": "data/cultural/greetings-unified.json#greeting-01"
+    },
+    {
+      "card_id": "greeting-afternoon",
+      "kind": "greeting",
+      "title": "Afternoon greeting",
+      "nko": "ߌ ߣߌ ߕߟߋ",
+      "latin": "i ni tile",
+      "english": "Good afternoon",
+      "prompt": "Listen, then hold the amber button and repeat.",
+      "expected_response": "ߒ ߓߊ ߌ ߣߌ ߕߟߋ",
+      "source": "data/cultural/greetings-unified.json#greeting-03"
+    },
+    {
+      "card_id": "letter-a",
+      "kind": "letter",
+      "title": "Vowel A",
+      "nko": "ߊ",
+      "latin": "a",
+      "english": "N'Ko vowel A",
+      "prompt": "Trace the shape with your finger, then say its sound.",
+      "expected_response": null,
+      "source": "data/nko-characters.json#vowels.ߊ"
+    },
+    {
+      "card_id": "letter-i",
+      "kind": "letter",
+      "title": "Vowel I",
+      "nko": "ߌ",
+      "latin": "i",
+      "english": "N'Ko vowel I",
+      "prompt": "Trace the shape with your finger, then say its sound.",
+      "expected_response": null,
+      "source": "data/nko-characters.json#vowels.ߌ"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102c24" />
+    <title>Jeli — Local N'Ko Learning Companion</title>
+    <meta
+      name="description"
+      content="A private, local prototype for the Jeli N'Ko learning companion."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-glow" aria-hidden="true"></div>
+    <main class="app-shell">
+      <header class="masthead">
+        <div>
+          <p class="eyebrow">PRIVATE · LOCAL · HUMAN-GUIDED</p>
+          <h1><span lang="nqo" dir="rtl">ߖߍߟߌ</span> <small>Jeli</small></h1>
+          <p class="subtitle">The living N'Ko learning companion</p>
+        </div>
+        <div class="connection" aria-live="polite">
+          <span class="connection-dot"></span>
+          <span id="connection-label">Connecting locally</span>
+        </div>
+      </header>
+
+      <section class="workspace" aria-label="Jeli prototype workspace">
+        <article class="device-stage" aria-label="Interactive Jeli device">
+          <div class="stage-label">
+            <span>DEVICE TWIN</span>
+            <span id="mode-label">IDLE</span>
+          </div>
+
+          <div class="device" id="device">
+            <div class="device-head">
+              <div class="camera-rail" aria-label="Camera privacy shutter">
+                <button
+                  class="camera-shutter"
+                  id="camera-shutter"
+                  type="button"
+                  aria-pressed="false"
+                  aria-label="Open camera shutter"
+                >
+                  <span class="camera-lens" aria-hidden="true"></span>
+                  <span class="shutter-copy">CAMERA CLOSED</span>
+                </button>
+              </div>
+
+              <div class="face-screen" aria-live="polite">
+                <div class="idle-mark" id="idle-mark" lang="nqo" dir="rtl">ߒߞߏ</div>
+                <div class="lesson-display hidden" id="lesson-display">
+                  <p class="screen-kind" id="screen-kind">LESSON</p>
+                  <p class="nko-display" id="nko-display" lang="nqo" dir="rtl"></p>
+                  <p class="latin-display" id="latin-display"></p>
+                  <p class="english-display" id="english-display"></p>
+                </div>
+                <div class="recording-banner hidden" id="recording-banner">
+                  <span></span> LISTENING — LOCAL ONLY
+                </div>
+              </div>
+            </div>
+
+            <div class="neck" aria-hidden="true"><span></span></div>
+
+            <div class="device-base">
+              <div class="talk-zone">
+                <button
+                  class="talk-button"
+                  id="talk-button"
+                  type="button"
+                  aria-label="Hold to speak"
+                  disabled
+                >
+                  <span class="talk-ring"></span>
+                  <span class="talk-icon">●</span>
+                </button>
+                <span class="control-label">HOLD TO SPEAK</span>
+              </div>
+
+              <div class="card-deck" id="card-deck" aria-live="polite">
+                <span class="deck-label">NFC LESSON</span>
+                <div class="lesson-card-placeholder" id="deck-card">
+                  <span class="deck-glyph" lang="nqo" dir="rtl">ߒߞߏ</span>
+                  <span class="deck-title">Choose a card</span>
+                </div>
+              </div>
+
+              <button
+                class="privacy-switch"
+                id="mic-switch"
+                type="button"
+                aria-pressed="false"
+                aria-label="Lock microphone"
+              >
+                <span>MIC</span>
+                <span class="switch-track"><span></span></span>
+                <span id="mic-label">READY</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="audio-actions">
+            <button id="replay-button" type="button" disabled>Replay my voice</button>
+            <span id="audio-status">No audio leaves this browser.</span>
+          </div>
+        </article>
+
+        <aside class="lesson-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">LESSON CARDS</p>
+              <h2>Place one on Jeli</h2>
+            </div>
+            <button class="text-button" id="reset-button" type="button">Reset</button>
+          </div>
+
+          <div class="lesson-grid" id="lesson-grid" aria-label="Available lesson cards"></div>
+
+          <section class="coach-card" aria-live="polite">
+            <p class="eyebrow">GUIDE</p>
+            <h3 id="coach-title">Start with a card</h3>
+            <p id="coach-prompt">
+              Pick a greeting or letter. Jeli will show it on the face and unlock the talk button.
+            </p>
+            <p class="response hidden" id="response-line">
+              <span>RESPONSE</span>
+              <b id="expected-response" lang="nqo" dir="rtl"></b>
+            </p>
+          </section>
+
+          <section class="trust-card">
+            <p class="eyebrow">TRUST CONTRACT</p>
+            <ul>
+              <li>No automatic pronunciation score.</li>
+              <li>Audio remains in this browser session.</li>
+              <li>Camera capture is not implemented.</li>
+              <li>Canonical corpus candidates require human authority.</li>
+            </ul>
+          </section>
+        </aside>
+      </section>
+
+      <footer class="event-strip">
+        <span>LAST EVENT</span>
+        <code id="event-label">prototype.ready</code>
+        <span class="event-note" id="revision-label">REV 1</span>
+      </footer>
+    </main>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
+

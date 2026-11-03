@@ -1,0 +1,27 @@
+{
+  "generator": "manifold3d",
+  "units": "millimetres",
+  "parts": [
+    "arducam_carrier",
+    "base_bottom",
+    "base_top",
+    "camera_shutter",
+    "display_bezel",
+    "fit_coupon",
+    "head_front",
+    "head_rear",
+    "neck_yoke",
+    "nko_badge",
+    "pi_carrier",
+    "power_bank_sled",
+    "privacy_slider",
+    "status_ring",
+    "talk_button"
+  ],
+  "assembly_envelope_mm": [
+    124,
+    114,
+    150
+  ],
+  "source_contract": "jeli-config.scad"
+}

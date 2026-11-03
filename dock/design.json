@@ -1,0 +1,19 @@
+{
+  "revision": "V2.2 external cased-Pi dock",
+  "units": "mm",
+  "measurement_status": "phone AR estimates; conflicting long-edge readings; not calibrated",
+  "observations_mm": {"top": [101.6, 76.2], "side": [114.3, 38.1]},
+  "case_proxy_mm": [114, 76, 38],
+  "base_mm": [144, 108, 3.2],
+  "fixed_stop_inner_x": -60,
+  "moving_stop_inner_x_range": [40, 62],
+  "support_height_above_plate": 4,
+  "stop_height_above_support": 3,
+  "side_guide_inner_gap": 88,
+  "bolt_clearance_diameter": 3.4,
+  "strap_slot_mm": [16, 4],
+  "strap_x_positions": [-36, 10],
+  "strap_y_positions": [-47, 47],
+  "integration": "freestanding beside Jeli; not a shell-mounted part",
+  "physical_fit_verified": false
+}

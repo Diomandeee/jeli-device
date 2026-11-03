@@ -1,0 +1,5 @@
+cad/exports/
+cad/renders/
+cad/.venv/
+__pycache__/
+.DS_Store
